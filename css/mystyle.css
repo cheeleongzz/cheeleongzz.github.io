@@ -1,21 +1,32 @@
 body {
     font-family: 'Poiret One', cursive;
+    font-weight: 700;
 }
 
 .navbar {
     margin-bottom: 0;
 }
 
+.navbar.navbar-brand {
+    font-size: 3rem;
+}
+
 .jumbotron {
     display: flex;
     flex-wrap: wrap;
-    background-image: url(saving.jpg);
+    background-image: url(saving-sm-200.jpg);
     background-size: cover;
     color: #fff;
     height: 650px;
     font-family: 'Poiret One', cursive;
     margin-bottom: 0;
     align-items: center;
+}
+
+@media only screen and (min-width: 400px) {
+    .jumbotron {
+        background-image: url('saving.jpg');
+    }
 }
 
 .jumbotron h2 {
